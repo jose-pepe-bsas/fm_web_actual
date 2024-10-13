@@ -3749,7 +3749,6 @@ textarea.form-control-lg {
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;
   display: flex;
-  display:none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -3878,7 +3877,6 @@ textarea.form-control-lg {
   }
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
-    display: none !important;
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
@@ -3927,7 +3925,6 @@ textarea.form-control-lg {
   }
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
-    display: none !important;
     flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
@@ -3975,7 +3972,6 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    display: none !important;
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
@@ -4023,7 +4019,6 @@ textarea.form-control-lg {
   }
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
-    display: none !important;
     flex-basis: auto;
   }
   .navbar-expand-xl .navbar-toggler {
@@ -4071,7 +4066,6 @@ textarea.form-control-lg {
   }
   .navbar-expand-xxl .navbar-collapse {
     display: flex !important;
-    display: none !important;
     flex-basis: auto;
   }
   .navbar-expand-xxl .navbar-toggler {
@@ -4118,7 +4112,6 @@ textarea.form-control-lg {
 }
 .navbar-expand .navbar-collapse {
   display: flex !important;
-    display: none !important;
   flex-basis: auto;
 }
 .navbar-expand .navbar-toggler {
