@@ -21,58 +21,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="../../index.html">Volver</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Aprender</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Aprender</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!--Wpp button-->
-    <style>
-        .float {
-            position: fixed;
-            width: 90px;
-            height: 90px;
-            bottom: 90px;
-         right:40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 60px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            transition: all 1.5s ease-in-out;
-        }
 
-        .my-float {
-            margin-top: 16px;
-        }
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <div class="float">
+ <button id="btnMostrar" 
+          class="fa fa-whatsapp my-float"
+        style="border-radius: 100%; margin-top: 0px; width: 100%; height: 100%; background-color: transparent; border: 0px;" ></button>
+      </div>
 
-        .float:hover {
-            transform: scale(2);
-        }
-    </style>
-    <script type="text/javascript">
-        function fbq() {
 
-        };
+<div class="card d-none" id="NoAyuda" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Antes de hablarnos</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Aclaremos en que NO podemos ayudarte.</h6>
+    <p class="card-text"><b>No</b> trabajamos ni con friselina <b>ni</b> con papel kraft, y aunque los conocemos por estar en el rubro <b>no</b> damos recomendaciones sobre ellos.<br><br>Nuestros materiales son Polietileno, Polipropileno, y Cristal esmerilado.</p>
+  <button id="btnOcultar" class="btn btn-secondary">No contactar</button>
+  <button id="btnOcultar" class="btn btn-primary" onclick="wppbut()">Contactar</button>
+  </div>
+</div>
 
-        function wppbut() {
-            console.log("Wpp")
-            fbq('track', 'Contact', {});
-            window.location.replace("https://api.whatsapp.com/send?phone=+54 9 11 3293-5668&text=Hola%20vengo%20de%20tu%20web.%20%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre:");
-        };
-
-        function smbut(link) {
-            console.log("sm")
-            fbq('trackCustom', 'SocialMedia', {}); window.location.replace(link);
-        };
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <div class="float">
-        <button style="border-radius:100%;margin-top: 0px;width:100%;height:100%;background-color:transparent;border:0px;" onclick="wppbut()" class="fa fa-whatsapp my-float"></button>
-    </div>
     <!-- Page content-->
     <div class="container bg-dark mt-5">
         <div class="row">
@@ -192,6 +166,8 @@
             <p class="m-0 text-center text-white">Copyright &copy; FM Colorprint - PBA</p>
          </div>
       </footer>   
+
+      <script src="../js/scripts.js"></script>
 </body>
 
 </html>

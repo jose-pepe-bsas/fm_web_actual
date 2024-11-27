@@ -13,47 +13,30 @@
       <link href="../css/styles.css" rel="stylesheet" />
    </head>
    <body class="bg-dark">
+      
+     
       <!--Wpp button-->
-      <style>
-         .float {
-            position: fixed;
-            width: 90px;
-            height: 90px;
-            bottom: 90px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 60px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            transition: all 1.5s ease-in-out;
-         }
-         .my-float {
-            margin-top: 16px;
-         }
-         .float:hover {
-            transform: scale(2);
-         }
-      </style>
-      <script type="text/javascript">
-         function fbq() { }
-         function wppbut() {
-            console.log("Wpp")
-            fbq('track', 'Contact', {});
-            window.location.replace("https://api.whatsapp.com/send?phone=+54 9 11 3293-5668&text=Hola%20vengo%20de%20tu%20web.%20%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre:");
-         };
-         function smbut(link) {
-            console.log("sm")
-            fbq('trackCustom', 'SocialMedia', {});
-            window.location.replace(link);
-         };
-      </script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <div class="float">
-         <button style="border-radius:100%;margin-top: 0px;width:100%;height:100%;background-color:transparent;border:0px;" onclick="wppbut()" class="fa fa-whatsapp my-float"></button>
+ <button id="btnMostrar" 
+          style="border-radius: 100%; margin-top: 0px; width: 100%; height: 100%; background-color: transparent; border: 0px;" 
+          class="fa fa-whatsapp my-float">
+  </button>
       </div>
+
+
+<div class="card d-none" id="NoAyuda" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Antes de hablarnos</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Aclaremos en que NO podemos ayudarte.</h6>
+    <p class="card-text"><b>No</b> trabajamos ni con friselina <b>ni</b> con papel kraft, y aunque los conocemos por estar en el rubro <b>no</b> damos recomendaciones sobre ellos.<br><br>Nuestros materiales son Polietileno, Polipropileno, y Cristal esmerilado.</p>
+  <button id="btnOcultar" class="btn btn-secondary">No contactar</button>
+  <button id="btnOcultar" class="btn btn-primary" onclick="wppbut()">Contactar</button>
+  </div>
+</div>
+
+
+
       <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
       <div class="container">
@@ -62,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="../../index.html">Volver</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Aprender</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Aprender</a></li>
           </ul>
         </div>
       </div>
@@ -95,7 +78,9 @@
                      <p class="fs-5 mb-4 text-white">Las bolsas personalizadas son aquellas que se diseñan específicamente para reflejar la identidad de tu marca. Pueden incluir tu logo, colores corporativos, eslogan y otros elementos gráficos que hagan que tu negocio sea fácilmente reconocible. Además de su función práctica, estas bolsas actúan como una herramienta de marketing, acompañando a tus productos y creando una experiencia de compra memorable para tus clientes.</p>
                      
                      <h2 class="fw-bolder mb-4 mt-5 text-white">2. Tipos de Bolsas Personalizadas</h2>
-                     <p class="fs-5 mb-4 text-white">Existen diferentes tipos de bolsas personalizadas que se adaptan a las necesidades y estilo de cada negocio. Podés elegir entre bolsas de papel, plástico, tela o friselina, dependiendo del tipo de producto que ofrezcas y la imagen que quieras proyectar. Por ejemplo, si te enfocás en ropa deportiva de alta gama, una bolsa de papel kraft con un diseño elegante podría reforzar la percepción de calidad y cuidado por los detalles.</p>
+                     <p class="fs-5 mb-4 text-white">Existen diferentes tipos de bolsas personalizadas que se adaptan a las necesidades y estilo de cada negocio. Podés elegir entre bolsas de plásticos como el Polietileno o el Polipropileno, tela o friselina, dependiendo del tipo de producto que ofrezcas y la imagen que quieras proyectar. Por ejemplo, si te enfocás en ropa deportiva de alta gama, una bolsa de Polietileno de Baja Densidad con un diseño elegante podría reforzar la percepción de calidad y cuidado por los detalles.</p>
+
+                     <p class="fs-5 mb-4 text-white">Nosotros trabajamos Polietilenos y Polipropileno porque se puede reciclar y cuidar el medio ambiente, hoy en dia los consumidores jovenes estan involucrados en cuidados medioambientales y les importa contribuir.</p>
                      
                      <h2 class="fw-bolder mb-4 mt-5 text-white">3. ¿Por Qué Elegir Bolsas Personalizadas?</h2>
                      <p class="fs-5 mb-4 text-white">Las bolsas personalizadas no solo aportan valor a tu marca, sino que también generan una conexión emocional con tus clientes. Cuando un cliente recibe su compra en una bolsa diseñada con esmero, se siente especial, cuidado y más propenso a recomendar tu negocio. Además, estas bolsas son una forma efectiva de publicidad gratuita, ya que cada vez que alguien las utiliza, tu marca se hace visible para otros potenciales clientes.</p>
@@ -160,6 +145,6 @@
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
+      <script src="../js/scripts.js"></script>
    </body>
 </html>

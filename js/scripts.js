@@ -52,3 +52,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+         
+          function wppbut() {
+            window.location.replace("https://api.whatsapp.com/send?phone=+54 9 11 3293-5668&text=Hola%20vengo%20de%20tu%20web.%20%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre:");
+          };
+
+         
+          function nock() {
+            window.location.replace("https://www.google.com");
+          };
+
+document.getElementById('cookiesbut').addEventListener('click', () => {
+  const cook = document.getElementById('cookiesdiv');
+  if (cook) {
+    cook.style.display = 'none';}
+  });

@@ -13,46 +13,25 @@
       <link href="../css/styles.css" rel="stylesheet" />
    </head>
    <body class="bg-dark">
+      
       <!--Wpp button-->
-      <style>
-         .float {
-            position: fixed;
-            width: 90px;
-            height: 90px;
-            bottom: 90px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 60px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            transition: all 1.5s ease-in-out;
-         }
-         .my-float {
-            margin-top: 16px;
-         }
-         .float:hover {
-            transform: scale(2);
-         }
-      </style>
-      <script type="text/javascript">
-         function fbq() {
-         };
-         function wppbut() {
-            console.log("Wpp")
-            fbq('track', 'Contact', {});
-            window.location.replace("https://api.whatsapp.com/send?phone=+54 9 11 3293-5668&text=Hola%20vengo%20de%20tu%20web.%20%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre:");
-         };
-         function smbut(link) {
-            console.log("sm")
-            fbq('trackCustom', 'SocialMedia', {}); window.location.replace(link); };
-      </script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <div class="float">
-         <button style="border-radius:100%;margin-top: 0px;width:100%;height:100%;background-color:transparent;border:0px;" onclick="wppbut()" class="fa fa-whatsapp my-float"></button>
+ <button id="btnMostrar" 
+          class="fa fa-whatsapp my-float"
+        style="border-radius: 100%; margin-top: 0px; width: 100%; height: 100%; background-color: transparent; border: 0px;" ></button>
       </div>
+
+
+<div class="card d-none" id="NoAyuda" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Antes de hablarnos</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Aclaremos en que NO podemos ayudarte.</h6>
+    <p class="card-text"><b>No</b> trabajamos ni con friselina <b>ni</b> con papel kraft, y aunque los conocemos por estar en el rubro <b>no</b> damos recomendaciones sobre ellos.<br><br>Nuestros materiales son Polietileno, Polipropileno, y Cristal esmerilado.</p>
+  <button id="btnOcultar" class="btn btn-secondary">No contactar</button>
+  <button id="btnOcultar" class="btn btn-primary" onclick="wppbut()">Contactar</button>
+  </div>
+</div>
       <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
       <div class="container">
@@ -61,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="../../index.html">Volver</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Aprender</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Aprender</a></li>
           </ul>
         </div>
       </div>
@@ -91,10 +70,11 @@
                      <p class="fs-5 mb-4 text-white">Determinar el costo de tus bolsas en un contexto económico tan variable como el de Argentina es importante para que tengas control sobre los gastos de tu negocio. A continuación, te brindamos una guía sobre los factores a considerar y cómo calcular el costo de tus bolsas personalizadas según el tipo de negocio.</p>
                      <h2 class="fw-bolder mb-4 mt-5 text-white">Recomendaciones según el rubro y tipo de bolsa</h2>
                      <h3 class="fw-bolder mb-4 mt-5 text-white">Indumentaria (general)</h3>
-                     <p class="fs-5 mb-4 text-white">Para negocios de indumentaria, como tiendas de ropa que abarcan una amplia variedad de productos, se recomienda usar bolsas de papel kraft en forma de riñón. Este tipo de bolsa es resistente y elegante, ideal para entregar desde camisetas hasta abrigos. El material de papel kraft proporciona una imagen eco-friendly, que es cada vez más valorada por los consumidores.</p>
+                     <p class="fs-5 mb-4 text-white">Para negocios de indumentaria, como tiendas de ropa que abarcan una amplia variedad de productos, se recomienda usar bolsas de Polietileno, o Cristal Esmerilado en forma de riñón. Este tipo de bolsa es resistente y elegante, ideal para entregar desde camisetas hasta abrigos.</p>
                      <ul class="fs-5 mb-4 text-white">
-                        <li><strong>Material recomendado:</strong> Papel Kraft</li>
-                        <li><strong>Cantidad recomendada:</strong> 500 para nuevos emprendedores; 2000 a 3000 para negocios con clientela frecuente.</li>
+                        <li><strong>Material recomendado:</strong> Polietileno (Alta y Baja densidad)</li>
+                        <li><strong>Material recomendado:</strong> Cristal Esmerilado</li>
+                        <li><strong>Cantidad recomendada:</strong> Entre 300 y 500 para nuevos emprendedores; 2000 a 3000 para negocios con clientela frecuente.</li>
                      </ul>
                      <h3 class="fw-bolder mb-4 mt-5 text-white">Ropa Deportiva</h3>
                      <p class="fs-5 mb-4 text-white">Si tu negocio se enfoca en ropa deportiva, donde los productos pueden ser voluminosos o pesados, lo mejor es optar por bolsas de polipropileno en forma de camiseta. Estas bolsas son extremadamente duraderas y resistentes al peso, lo que las hace perfectas para transportar artículos como zapatillas, buzos o equipamiento deportivo.</p>
@@ -103,8 +83,10 @@
                         <li><strong>Cantidad recomendada:</strong> 500 para nuevos emprendedores; 2000 a 3000 para negocios con clientela frecuente.</li>
                      </ul>
                      <h3 class="fw-bolder mb-4 mt-5 text-white">Perfumería</h3>
-                     <p class="fs-5 mb-4 text-white">Para las perfumerías, donde la presentación es clave y los productos son generalmente pequeños, las bolsas de papel madera en forma de riñón son la mejor opción. Este material no solo es elegante, sino que también protege los productos delicados como los frascos de perfume. Además, el papel madera puede personalizarse fácilmente con el logo de tu negocio, dando un toque de sofisticación.</p>
+                     <p class="fs-5 mb-4 text-white">Para las perfumerías, donde la presentación es clave y los productos son generalmente pequeños, las bolsas pueden ser de Polietileno o Polipropileno cristalizado, en forma de riñón son la mejor opción. Esta combinacion no solo es elegante, sino que también protege los productos delicados como los frascos de perfume.</p>
                      <ul class="fs-5 mb-4 text-white">
+                        <li><strong>Material recomendado:</strong> Polietileno de Alta densidad, laminado o cristalizado</li>
+                        <li><strong>Material recomendado:</strong> Polietileno de Baja Densidad, alta tasa de micrones</li>
                         <li><strong>Material recomendado:</strong> Papel Madera</li>
                         <li><strong>Cantidad recomendada:</strong> 500 para nuevos emprendedores; 2000 a 3000 para negocios con clientela frecuente.</li>
                      </ul>
@@ -179,6 +161,6 @@
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
+      <script src="../js/scripts.js"></script>
    </body>
 </html>

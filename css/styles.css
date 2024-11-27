@@ -11320,7 +11320,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 /*Wpp*/
 .float{
 position:fixed;
-display:none;
 width:90px;
 height:90px;
 bottom:90px;
@@ -11332,13 +11331,13 @@ text-align:center;
 font-size:60px;
 box-shadow: 2px 2px 3px #999;
 z-index:100;
-transition: all 1.5s ease-in-out;
+transition: all 0.5s ease-in-out;
 }
 .my-float{
 margin-top:16px;
 }
 .float:hover{
-transform: scale(2);
+transform: scale(1.2);
 }
 
 
@@ -11385,4 +11384,104 @@ transform: scale(2);
     box-sizing: content-box;
     padding:0 0 0 0 !important;
   }
+}
+
+#NoAyuda {
+      position: fixed;
+      top: 80px; /* Levemente debajo del navbar */
+      left: 50%;
+      transform: translateX(-50%); /* Centramos horizontalmente */
+      z-index: 1050; /* Asegura que esté por encima del contenido */
+      display: none; /* Inicialmente oculto */
+    }
+
+.navbar-shrink{
+transition: background-color 0.5s ease-in-out !important;
+background-color :#103110 !important;
+
+
+}
+
+.navbar-shrink > div > a{
+
+transition: color 0.5s ease-in-out !important;
+}
+
+.navbar-shrink:hover{
+  background-color:#4c9141  !important;
+}
+
+.navbar-shrink:hover > div > a{
+  color: #2654ac !important;
+}
+.navbar-nav > li:hover > a{
+  color: #2654ac !important;
+}
+
+.fontStyle2 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.fontStyle1 {
+  font-family: 'Anton', sans-serif;
+}
+
+.compact {
+  line-height: 1.5em;
+}
+
+
+a.customNav {
+  color:white;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  border-right: 1px solid darkgreen;
+  padding: 14px 18px;
+}
+
+
+
+a.active,
+a.customNav:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: transparent;
+}
+
+@media screen and (min-width:797px) {
+  #bottomNavbar.collapse {
+    display: block;
+  }
+}
+
+@media screen and (max-width:796px) {
+  #bottomNavbar {
+    padding: 14px;
+  }
+
+  #bottomNavbar a.customNav {
+    display: block !important;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  #removeFlex {
+    display: block !important;
+    text-align: center;
+  }
+}
+
+.nv{
+  background-color:rgb(16, 49, 16);
+  z-index: 999 !important;
+}
+
+
+.gcs-control-cse{
+  padding:0 !important;
 }

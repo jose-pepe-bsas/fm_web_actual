@@ -10824,3 +10824,35 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+/*Wpp*/
+.float{
+position:fixed;
+width:70px;
+height:70px;
+bottom:60px;
+right:40px;
+background-color:#25d366;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:47px;
+box-shadow: 2px 2px 3px #999;
+z-index:100;
+transition: all 0.5s ease-in-out;
+}
+.my-float{
+margin-top:16px;
+}
+.float:hover{
+transform: scale(1.1);
+}
+
+
+#NoAyuda {
+      position: fixed;
+      top: 80px; /* Levemente debajo del navbar */
+      left: 50%;
+      transform: translateX(-50%); /* Centramos horizontalmente */
+      z-index: 1050; /* Asegura que esté por encima del contenido */
+    }
