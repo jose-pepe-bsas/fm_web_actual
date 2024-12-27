@@ -10856,3 +10856,23 @@ transform: scale(1.1);
       transform: translateX(-50%); /* Centramos horizontalmente */
       z-index: 1050; /* Asegura que esté por encima del contenido */
     }
+
+.evaluando{
+  display:inline-block;
+}
+
+.evaluando:hover {
+  background-color: #00ff00 ;
+  cursor: pointer;
+}
+
+.evaluando:active{
+  background-color: yellow;
+  color: black;
+  transform : scale(1.1);
+}
+
+.selected_one{
+  background-color: #00ff00;
+  display:inline-block;
+}

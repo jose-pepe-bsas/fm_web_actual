@@ -10,19 +10,17 @@
       <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
       <!-- Core theme CSS (includes Bootstrap)-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
       <script>
-$(document).ready(function () {
-    $("#buscarMedida").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
-        $(".medBol").filter(function () {
-            $(this).parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-     });
- });
-         </script>
-
-
+         $(document).ready(function () {
+             $("#buscarMedida").on("keyup", function () {
+                 var value = $(this).val().toLowerCase();
+                 $(".medBol").filter(function () {
+                     $(this).parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                 });
+              });
+          });
+                  
+      </script>
       <link href="../css/styles.css" rel="stylesheet" />
    </head>
    <body class="bg-dark">
@@ -55,7 +53,6 @@ $(document).ready(function () {
             </div>
          </div>
       </nav>
-
       <!-- Page content-->
       <div class="container  bg-dark mt-5">
          <div class="row">
@@ -72,170 +69,168 @@ $(document).ready(function () {
                      <div class="text-muted fst-italic mb-2">Publicado el 11/24, por FM</div>
                   </header>
                   <!-- Preview image figure-->
-
-                     <h2 class="fw-bolder mb-4 mt-5 text-white" style="display:inline">Ingresa la medida que buscas: </h2> <input type="text" id="buscarMedida" placeholder="Ej 20 x 30">
-
-              </p>
-
-
-            
-<div class="container mt-4">
-   <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas riñon, formitas o redondas, tenemos medidas:</h3>
-                
-                
-
-
-   <ul class="list-group medidasBolsas">
-      <div class="col-md-12">
-         <li class="list-group-item medBol">20 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">35 x 25 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">40 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">45 x 35 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">50 x 40 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">55 x 45 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">60 x 50 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">70 x 35 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">70 x 40 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-      </div>
-      <div class="col-md-12">
-         <li class="list-group-item medBol">20 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
-
-</div>
-
-   <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas camiseta, tenemos medidas:</h3>
-                
-<div class="col-md-12">
-    <li class="list-group-item medBol">20 x 30 / de 15 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">25 x 35 / de 15 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">30 x 40 / de 15 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">35 x 45 / de 15 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">40 x 50 / de 17 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">40 x 60 / de 17 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">45 x 60 / de 18 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">50 x 60 / de 22 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">50 x 70 / de 22 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">60 x 70 / de 25 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">60 x 80 / de 25 MICRONES de tipo camiseta.</li>
-</div>
-
-
-
-   <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas E-Commerce, tenemos medidas:</h3>
-
-
-<div class="col-md-12">
-    <li class="list-group-item medBol">20 x 35 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">25 x 40 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">30 x 45 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">30 x 50 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">35 x 50 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">40 x 55 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">40 x 60 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-<div class="col-md-12">
-    <li class="list-group-item medBol">45 x 60 / de 60 MICRONES de tipo camiseta.</li>
-</div>
-
-
-   </ul>
-</div>
-                
-
-                     
-                     <h2 class="fw-bolder mb-4 mt-5 text-white">¿Que necesitas?</h2>
-                     <p class="fs-5 mb-4 text-white"> Consultanos tocando
-
-            <button id="btnOcultar" class="btn btn-primary" onclick="wppbut()">este boton.</button>
-                </p>
-
-              </article>
+                  <h2 class="fw-bolder mb-4 mt-5 text-white" style="display:inline">Ingresa la medida que buscas: </h2>
+                  <input type="text" id="buscarMedida" placeholder="Ej 20 x 30">
+                  </p>
+                  <div class="container mt-4">
+                     <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas riñon, formitas o redondas, tenemos medidas:</h3>
+                     <ul class="list-group medidasBolsas">
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">20 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">35 x 25 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">40 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">45 x 35 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">50 x 40 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">55 x 45 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">60 x 50 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">70 x 35 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">70 x 40 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">20 x 30 / de 60 Micrones de tipo riñon, formitas y redondas</li>
+                        </div>
+                        <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas camiseta, tenemos medidas:</h3>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">20 x 30 / de 15 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">25 x 35 / de 15 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">30 x 40 / de 15 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">35 x 45 / de 15 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">40 x 50 / de 17 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">40 x 60 / de 17 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">45 x 60 / de 18 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">50 x 60 / de 22 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">50 x 70 / de 22 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">60 x 70 / de 25 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">60 x 80 / de 25 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <h3  class="fw-bolder mb-4 mt-5 text-white">Tipo de bolsas E-Commerce, tenemos medidas:</h3>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">20 x 35 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">25 x 40 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">30 x 45 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">30 x 50 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">35 x 50 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">40 x 55 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">40 x 60 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                        <div class="col-md-12">
+                           <li class="list-group-item medBol">45 x 60 / de 60 MICRONES de tipo camiseta.</li>
+                        </div>
+                     </ul>
+                  </div>
+                  <h2 class="fw-bolder mb-4 mt-5 text-white" id="cotizar">Cotiza tu pedido!</h2>
+                  <p class="fs-5 mb-4 text-white">Sin compromiso, evalua tus costes. Si queres mejorarlos, hablanos al Whatsapp.</p>
+                  <h3 class="fw-bolder mb-4 mt-5 text-white">1. Selecciona el tipo de bolsa</h3>
+                  <select id="a_background" name="background" class="widget">
+                     <option value="pendiente" selected="selected">Seleccionar una opcion</option>
+                     <option value="riñon">Bolsa Riñon</option>
+                     <option value="camiseta">Bolsa Camiseta</option>
+                     <option value="ecommerce">Bolsa Ecommerce</option>
+                  </select>
+                  <p class="fs-5 mb-4 text-white">Cotizando bolsas: <span id="seleccion_cotizacion" >Aun no se selecciono.</span></p>
+                  <h3 class="fw-bolder mb-4 mt-5 text-white">2. Elegi las medidas de tus bolsas</h3>
+                  <input type="text" id="cantidad_cotizacion" placeholder="Ej 20 x 30" />
+                  <div id ="option_list_container"></div>
+                  <h3 class="fw-bolder mb-4 mt-5 text-white">3. Selecciona la cantidad para calcular el precio</h3>
+                  <input type="text" id="cantidad_bolsas" placeholder="Ej 500" />
+                  <p class="fs-5 mb-4 text-white">Tu precio es: <span id="precio_bolsas">0</span></p>
+                  <h3 class="fw-bolder mb-4 mt-5 text-white">4. Hablanos para concretar y mejorar tu pedido</h3>
+                  <p class="fs-5 mb-4 text-white">Ahora mismo podriamos estar haciendo descuentos, asi como orientarte para mejorar tu eleccion sobre tus bolsas.</p>
+                  <div >
+                     <button id="seguir_pedido" onclick="seguir_pedido()"
+                        class="btn btn-success"> Contactanos tocando aqui. <i class="fa fa-whatsapp"></i></button>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+               </article>
             </div>
-
-      <!-- Side widgets-->
-      <div class="col-lg-4">
-         <!-- Search widget-->
-         <div class="card mb-4 bg-secondary text-light">
-            <div class="card-header">Buscar artículos</div>
-            <div class="card-body">
-               <div class="input-group">
-                  <script async src="https://cse.google.com/cse.js?cx=a76cb26b5ff43434d"></script>
-                  <div class="gcse-search"></div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+               <!-- Search widget-->
+               <div class="card mb-4 bg-secondary text-light">
+                  <div class="card-header">Buscar artículos</div>
+                  <div class="card-body">
+                     <div class="input-group">
+                        <script async src="https://cse.google.com/cse.js?cx=a76cb26b5ff43434d"></script>
+                        <div class="gcse-search"></div>
+                     </div>
+                  </div>
+               </div>
+               <!-- categories widget-->
+               <div class="card mb-4 bg-secondary text-light">
+                  <div class="card-header">¿De qué se habla aquí?</div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <ul class="list-unstyled mb-0">
+                              <li><i>medidas bolsas</i></li>
+                              <li><i>pedido</i></li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-6">
+                           <ul class="list-unstyled mb-0">
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- side widget-->
+               <div class="card mb-4">
+                  <div class="card-header">¿Tenés consultas?</div>
+                  <div class="card-body">Resolvelas ya tocando el <i style="background-color:lime;">botón de Whatsapp</i>, con el cual podrás enviarnos tu consulta. Tu asesoramiento es <strong>sin coste.</strong></div>
                </div>
             </div>
          </div>
-         <!-- categories widget-->
-         <div class="card mb-4 bg-secondary text-light">
-            <div class="card-header">¿De qué se habla aquí?</div>
-            <div class="card-body">
-               <div class="row">
-                  <div class="col-sm-6">
-                     <ul class="list-unstyled mb-0">
-                        <li><i>medidas bolsas</i></li>
-                        <li><i>pedido</i></li>
-                     </ul>
-                  </div>
-                  <div class="col-sm-6">
-                     <ul class="list-unstyled mb-0">
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- side widget-->
-         <div class="card mb-4">
-            <div class="card-header">¿Tenés consultas?</div>
-            <div class="card-body">Resolvelas ya tocando el <i style="background-color:lime;">botón de Whatsapp</i>, con el cual podrás enviarnos tu consulta. Tu asesoramiento es <strong>sin coste.</strong></div>
-         </div>
-      </div>
-      </div>
       </div>
       <!-- Footer-->
       <footer class="py-5 bg-black">
@@ -243,14 +238,10 @@ $(document).ready(function () {
             <p class="m-0 text-center text-white">Copyright &copy; FM Colorprint - PBA</p>
          </div>
       </footer>
-
-
-
-
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
       <script src="../js/scripts.js"></script>
-
+      <script src="../../js/cotizador.js"></script>
    </body>
 </html>
